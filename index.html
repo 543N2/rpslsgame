@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>RPSLS-Game</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">543N2</div>
+    </header>
+
+    <div class="container">
+        <div class="opponent section">
+            <div id="opponent-card" class="card opponent-card">
+                <span id="opponent-title" class="text">Hey!</span>
+                <img id="opponent-icon" class="icon" src="images/thumb.svg" alt="">
+            </div>
+        </div>
+
+        <div class="board">
+            <strong id="player-score" class="player-score">You </strong>
+            <span id="board" class="message">Make your choice!</span>
+            <strong id="opponent-score" class="opponent-score">PC </strong>
+        </div>
+
+        <div id="player-section" class="player section">
+
+            <div id="rock-card" class="card player-card" onclick="playerGame('Rock')">
+                <span id="rock-title" class="text"></span>
+                <img id="rock-icon" class="icon" src="" alt="">
+            </div>
+
+            <div id="paper-card" class="card player-card" onclick="playerGame('Paper')">
+                <span id="paper-title" class="text"></span>
+                <img id="paper-icon" class="icon" src="" alt="">
+            </div>
+
+            <div id="scissors-card" class="card player-card" onclick="playerGame('Scissors')">
+                <span id="scissors-title" class="text"></span>
+                <img id="scissors-icon" class="icon" src="" alt="">
+            </div>
+
+            <div id="lizard-card" class="card player-card" onclick="playerGame('Lizard')">
+                <span id="lizard-title" class="text"></span>
+                <img id="lizard-icon" class="icon" src="" alt="">
+            </div>
+
+            <div id="spock-card" class="card player-card" onclick="playerGame('Spock')">
+                <span id="spock-title" class="text"></span>
+                <img id="spock-icon" class="icon" src="" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
